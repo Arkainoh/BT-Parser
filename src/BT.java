@@ -1,6 +1,6 @@
 
 public class BT {
-	private String str; //( parent , left child , right child )
+	private String str; // ( parent , left child , right child )
 	private Node root;
 	
 	private class Node {
@@ -13,7 +13,14 @@ public class BT {
 		
 	}
 	
-	
+	public String toString() {
+		StringBuffer sb = new StringBuffer("(");
+		
+		// Traverse tree
+		
+		sb.append(")");
+		return sb.toString();
+	}
 	
 	private static BT parseBT(String str) {
 		BT resultBT = new BT(str);
