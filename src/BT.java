@@ -9,13 +9,14 @@ public class BT {
 		Node right;
 	}
 	public BT(String str) {
-		this.str = str;
+		this.str = str.replaceAll("\\p{Z}", "");;
 		
 	}
+	
+	
 	
 	private static BT parseBT(String str) {
 		BT resultBT = new BT(str);
 		return resultBT;
 	}
-	
 }
